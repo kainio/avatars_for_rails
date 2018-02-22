@@ -8,8 +8,11 @@ module AvatarsForRails
 
       attr_accessor :logo_crop, :logo_crop_x, :logo_crop_y, :logo_crop_w, :logo_crop_h,
                     :avatar_tmp_basename
+      attr_accessible :logo
 
       has_attached_file :logo, avatarable_options
+      validates_attachment_content_type :logo, :content_type => /\Aimage\/.*\Z/ 
+
 
       before_validation :validate_crop_params, :crop_avatar,
                         :check_avatar_aspect_ratio

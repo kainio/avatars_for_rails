@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   # Gem dependencies
   #
   s.add_runtime_dependency('jquery-rails', '>= 3.0.0')
-  s.add_runtime_dependency('jquery-ui-rails', '>= 4.0.0')
+  s.add_runtime_dependency('jquery-ui-rails', '~> 4.0.3')
   s.add_runtime_dependency('flashy', '~> 0.0.1')
   s.add_runtime_dependency('paperclip', '>= 2.3.4')
 
@@ -26,14 +26,17 @@ Gem::Specification.new do |s|
   end
 
   # Development Gem dependencies
-  #
-  s.add_development_dependency('rails', '>= 3.1.0')
+
+  s.add_development_dependency('rails', '~>3.2')
   # Testing database
-  s.add_development_dependency('sqlite3-ruby')
+  s.add_development_dependency('sqlite3')
+    
+  s.add_development_dependency('test-unit')
+
   # Debugging
-  s.add_development_dependency('debugger')
+  s.add_development_dependency('byebug')
   # Specs
-  s.add_development_dependency('rspec-rails', '>= 2.5.0')
+  s.add_development_dependency('rspec-rails', '~> 2.6.1')
   # Fixtures
   s.add_development_dependency('factory_girl', '~> 1.3.2')
   # Population
