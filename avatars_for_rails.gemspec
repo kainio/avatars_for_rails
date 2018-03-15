@@ -14,9 +14,9 @@ Gem::Specification.new do |s|
 
   # Gem dependencies
   #
-  s.add_runtime_dependency('jquery-rails', '>= 3.0.0')
-  s.add_runtime_dependency('jquery-ui-rails', '~> 4.0.3')
-  s.add_runtime_dependency('flashy', '~> 0.0.1')
+  s.add_runtime_dependency('jquery-rails')
+  s.add_runtime_dependency('jquery-ui-rails')
+  s.add_runtime_dependency('flashy')
   s.add_runtime_dependency('paperclip', '>= 2.3.4')
 
   if defined?(PLATFORM) && PLATFORM == 'java'
@@ -27,7 +27,7 @@ Gem::Specification.new do |s|
 
   # Development Gem dependencies
 
-  s.add_development_dependency('rails', '~>3.2')
+  s.add_development_dependency('rails', '~>4.0.0')
   # Testing database
   s.add_development_dependency('sqlite3')
     
@@ -36,12 +36,12 @@ Gem::Specification.new do |s|
   # Debugging
   s.add_development_dependency('byebug')
   # Specs
-  s.add_development_dependency('rspec-rails', '~> 2.6.1')
+  s.add_development_dependency('rspec-rails')
   # Fixtures
-  s.add_development_dependency('factory_girl', '~> 1.3.2')
+  s.add_development_dependency('factory_girl')
   # Population
-  s.add_development_dependency('forgery', '~> 0.3.6')
+  s.add_development_dependency('forgery')
   # Integration testing
-  s.add_development_dependency('capybara', '~> 0.3.9')
+  s.add_development_dependency('capybara')
 end
 

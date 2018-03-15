@@ -1,4 +1,4 @@
-require 'RMagick'
+require 'rmagick'
 require 'jquery-rails'
 require 'jquery-ui-rails'
 require 'flashy'
