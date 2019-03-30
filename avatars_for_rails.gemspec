@@ -17,10 +17,10 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency('jquery-rails')
   s.add_runtime_dependency('jquery-ui-rails')
   s.add_runtime_dependency('flashy')
-  s.add_runtime_dependency('paperclip', '>= 2.3.4')
+  s.add_runtime_dependency('paperclip', '2.3.4')
 
   if defined?(PLATFORM) && PLATFORM == 'java'
-    s.add_runtime_dependency('rmagick4j','>= 0.3.0')
+    s.add_runtime_dependency('rmagick4j','0.3.0')
   else
     s.add_runtime_dependency('rmagick',' 2.16.0')
   end
